@@ -37,15 +37,6 @@ This isn't just a simple game—it's a complete learning project that demonstrat
 - **State Management**: Streamlit session state
 - **Deployment**: Streamlit Cloud
 
-### Project Structure
-
-rps-random/
-│
-├── app.py # Main Streamlit application & UI
-├── rps_core.py # Pure game logic (no UI dependencies)
-├── rps_history.txt # Match logs with timestamps
-├── requirements.txt # Project dependencies
-└── README.md # Project documentation
 
 ---
 
@@ -67,46 +58,6 @@ rps-random/
 - Real-time scoreboard with player, computer, and round tracking
 - Win rate calculation and streak monitoring
 - Early quit option without penalty
-
----
-
-## 🚦 Getting Started
-
-### Prerequisites
-
-- Python 3.9 or higher
-- streamlit
-
-### Installation
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/mayank-goyal09/rps-random.git
-cd rps-random
-```
-
-2. **Create virtual environment (optional but recommended)**
-
-```bash
-python -m venv venv
-source venv/bin/activate # Windows: venv\Scripts\activate
-```
-
-3. **Install dependencies**
-
-```bash
-pip install -r requirements.txt
-```
-
-4. **Run the application**
-
-```bash
-streamlit run app.py
-```
-
-5. **Access the app**
-- Open your browser and navigate to `http://localhost:8501`
 
 ---
 
@@ -166,17 +117,6 @@ if st.button("PLAY ROUND"):
 
 **Key Design Principle**: UI-only code—keeps interface logic separate from game mechanics.
 
----
-
-## 📊 Sample Match History
-
-Your matches are automatically logged to `rps_history.txt`:
-
-```
-2025-11-28 10:45:32, Best of 3, Rounds: 2, You: 2, Computer: 0, Result: YOU WIN
-2025-11-28 10:46:15, Best of 5, Rounds: 4, You: 2, Computer: 2, Result: COMPUTER WINS
-2025-11-28 10:47:02, Best of 3, Rounds: 3, You: 1, Computer: 2, Result: COMPUTER WINS
-```
 ---
 
 ## 🎓 What I Learned
